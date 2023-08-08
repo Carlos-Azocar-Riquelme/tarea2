@@ -13,3 +13,6 @@ class Tarea(models.Model):
     #Estado 0. Indica tarea pendiente
     #Estado 1, Indica tarea completada
     estado = models.BooleanField(default=0)
+
+    class Meta:
+        verbose_name_plural = 'Mis listas de tareas'
